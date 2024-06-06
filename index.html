@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhijeet Baral's Personal Webpage</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #00c6ff, #0072ff);
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 800px;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        header {
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            color: #fff;
+            font-size: 36px;
+            margin: 0;
+            text-shadow: 2px 2px #00c6ff;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .content h2 {
+            color: #00c6ff;
+            margin-bottom: 20px;
+            font-size: 28px;
+            text-shadow: 1px 1px #0072ff;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .content p {
+            font-size: 18px;
+            color: #ddd;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .contact-info {
+            list-style-type: none;
+            padding: 0;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .contact-info li {
+            margin: 10px 0;
+            font-size: 20px;
+        }
+
+        .contact-info a {
+            color: #00c6ff;
+            text-decoration: none;
+            font-weight: bold;
+            position: relative;
+            z-index: 1;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        .background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: 0;
+        }
+
+        .background span {
+            position: absolute;
+            display: block;
+            width: 20px;
+            height: 20px;
+            background: rgba(255, 255, 255, 0.3);
+            animation: animate 25s linear infinite;
+            bottom: -150px;
+        }
+
+        .background span:nth-child(1) { left: 25%; width: 80px; height: 80px; animation-delay: 0s; }
+        .background span:nth-child(2) { left: 10%; width: 20px; height: 20px; animation-delay: 2s; animation-duration: 12s; }
+        .background span:nth-child(3) { left: 70%; width: 20px; height: 20px; animation-delay: 4s; }
+        .background span:nth-child(4) { left: 40%; width: 60px; height: 60px; animation-delay: 0s; animation-duration: 18s; }
+        .background span:nth-child(5) { left: 65%; width: 20px; height: 20px; animation-delay: 0s; }
+        .background span:nth-child(6) { left: 75%; width: 110px; height: 110px; animation-delay: 3s; }
+        .background span:nth-child(7) { left: 35%; width: 150px; height: 150px; animation-delay: 7s; }
+        .background span:nth-child(8) { left: 50%; width: 25px; height: 25px; animation-delay: 15s; animation-duration: 45s; }
+        .background span:nth-child(9) { left: 20%; width: 15px; height: 15px; animation-delay: 2s; animation-duration: 35s; }
+        .background span:nth-child(10) { left: 85%; width: 150px; height: 150px; animation-delay: 0s; animation-duration: 11s; }
+
+        @keyframes animate {
+            0% {
+                transform: translateY(0) rotate(0deg);
+                opacity: 1;
+                border-radius: 0;
+            }
+            100% {
+                transform: translateY(-1000px) rotate(720deg);
+                opacity: 0;
+                border-radius: 50%;
+            }
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Abhijeet Baral's Personal Webpage</h1>
+        </header>
+        <div class="content">
+            <h2>About Me</h2>
+            <p>Hello! It's me <strong>Abhijeet Baral</strong></p>
+        </div>
+        <div class="content">
+            <h2>Contact Information</h2>
+            <ul class="contact-info">
+                <li>Discord: <a href="https://discord.gg/EeKYHddNHb" target="_blank">join my server!</a></li>
+                <li>Follow me on Xbox: <strong>XDplayer#7633</strong></li>
+            </ul>
+        </div>
+    </div>
+    <div class="background">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</body>
+</html>
